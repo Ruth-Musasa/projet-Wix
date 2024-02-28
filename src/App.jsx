@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import NavBar from "./Component/navBar";
 import Header from "./Component/Header";
+import { FAQs } from "./Component/Faqs";
+import WixOption from "./Component/WixOption";
 function App() {
   const [menu, setMenu] = useState(false)
   const handleClick = () => {
@@ -10,22 +12,22 @@ function App() {
     return (
       <NavBar>
         <Header>
-          <button onClick={handleClick} ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className="h-6 w-6 self-center " ><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+          <button onClick={handleClick} ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className="h-6 w-6 self-center " ><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" /></svg></button>
         </Header>
       </NavBar>
     )
   }
   return (
     <>
-        <Header>
-          <button onClick={handleClick} ><img src="src/assets/bars-solid.svg" alt="open menu" className="h-6 w-6 self-center " /></button>
-        </Header>
+      <Header>
+        <button onClick={handleClick} ><img src="src/assets/bars-solid.svg" alt="open menu" className="h-6 w-6 self-center " /></button>
+      </Header>
       <div className="grid place-content-center">
         <div className="bg-gradient-to-r from-[#2F40AD] via-[#2A3BA9] to-[#354AB5] h-auto text-white">
           <h1 className="mt-32 mb-5 text-4xl text-center leading-snug">Create a website without limits</h1>
-          <p className="text-base leading-6 text-center m-8">Build and scale with confidence. From a powerful website builder to advanced business solutions—we’ve got you covered.</p>
-          <input type="text" className="mx-8 w-80 rounded-full h-12 text-center " placeholder="Enter your Email adress" />
-          <div className="mx-8 w-80 rounded-full h-12 bg-white mt-8 text-[#354AB5] flex justify-center items-stretch">
+          <p className="text-base leading-6 text-center mb-8">Build and scale with confidence. From a powerful website builder to advanced business solutions—we’ve got you covered.</p>
+          <input type="text" className="mx-8 w-80 rounded-full h-12 text-center bg-blue-950" placeholder="Enter your Email adress" />
+          <div className="mx-8 w-80 rounded-full h-12 bg-white mt-4 text-[#354AB5] flex justify-center items-stretch">
             <span className="self-center">Get started</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-3 self-center animate-pulse"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
           </div>
@@ -54,10 +56,14 @@ function App() {
           <p className=" py-8 leading-7 text-base">Website templates that set you up for success Get a headstart on your journey with 900+ free, customizable website templates, strategically researched and tailored for every industry — or start from a blank canvas on our website builder.</p>
           <button className="self-center bg-white rounded-full text-black text-sm font-normal leading-5 py-1.5 px-5 w-36 h-12  left-5 mb-12">Get started</button>
           <div className=" pb-10">
-            <div >
-              <div className="snap-x">
-                <div className=" ">
-                  <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
+            <div className="flex ">
+              <div className="overflow-y-scroll h-52 ">
+                <div className=" h-46">
+                  <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" className="w-full" />
+                  <div className="flex items-stretch underline underline-offset-2">
+                    <a href="">store </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-3 self-center fill-white"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
+                  </div>
                 </div>
                 <div className=" ">
                   <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
@@ -74,10 +80,6 @@ function App() {
                 <div className=" ">
                   <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
                 </div>
-              </div>
-              <div className="flex items-stretch underline underline-offset-2">
-                <a href="">store </a>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-3 self-center fill-white"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
               </div>
             </div>
           </div>
@@ -193,11 +195,11 @@ function App() {
           <button className="self-center bg-black rounded-full text-white text-sm font-normal leading-5 py-1.5 px-5 w-36 h-12  left-5 mb-12">Get started</button>
         </div>
         <img src="src/assets/dfb81e_49b8b588d4f14821af45d22b4a78b81f~mv2.webp" alt="" />
-        <div className="bg-[#dac4fb] text-black px-8 py-6">
+        <div className="bg-[#dac4fb] text-black px-8 py-6 leading-relaxed">
           <h2 className=" text-4xl mt-12 ">How to create a website for free</h2>
-          <div className=" py-8 leading-7 text-base">
-            <p>Follow these 6 simple steps to create a website today.</p>
-            <ol className="list-decimal">
+          <div className=" py-8 leading-7 text-base space-y-6">
+            <p><strong>Follow these 6 simple steps to create a website today.</strong></p>
+            <ol className="list-decimal space-y-6 pl-6">
               <li>​Sign up for a free website builder. Choose what kind of website you want to create.</li>
               <li>Drag and drop 1000s of design features. Add text, galleries, videos, vector art and more.</li>
               <li>Drag and drop 1000s of design features. Add text, galleries, videos, vector art and more.</li>
@@ -254,6 +256,44 @@ function App() {
             </div>
           </div>
           <button className="self-center bg-black rounded-full text-white text-sm font-normal leading-5 py-1.5 px-5 w-36 h-12 left-5 ">Get started</button>
+        </div>
+        <div className="py-16 bg-white">
+          <div className="border-b border-black">
+            <h2 className="px-8 text-4xl mb-7 ">FAQs</h2>
+          </div>
+          <FAQs title='Is it easy to build a website?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='What types of websites can you build on Wix?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='How do I create a website?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='Can I create a website without knowing how to code?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='Should I use a website builder or hire a web developer?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='How do I build and host my site for free?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='How can I make sure my data and my visitors’ data is secure?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='How do I create a free website with a custom domain?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='How can I optimize my site for SEO on Wix?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='Is my site optimized for Core Web Vitals (CWV)?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='Can I use a website builder to create a landing page?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+          <FAQs title='How can I design a logo for my website for free?' text='Watch tutorials and read detailed articles in the Wix Help Center.' />
+        </div>
+        <div className="bg-[#dac4fb] text-black px-8 px-16 text-center">
+          <h2 className=" text-4xl mt-12 pb-6"> Tomorrow’s success starts today.</h2>
+          <button className="self-center bg-black rounded-full text-white text-sm font-normal leading-5 py-1.5 px-5 w-36 h-12  left-5 mb-12">Get started</button>
+        </div>
+        <div className="px-8 py-16 bg-white">
+          <img src="src/assets/Capture_d_écran_du_2024-02-28_15-21-51-removebg-preview.png" alt="logo" />
+          <p className="mb-12">The Wix website builder offers a complete solution from enterprise-grade infrastructure and business features to advanced SEO and marketing tools–enabling anyone to create and grow online.</p>
+          <WixOption option='Product' />
+          <WixOption option='Solutions' />
+          <WixOption option='Learn' />
+          <WixOption option='Support' />
+          <WixOption option='Company' />
+        </div>
+      </div>
+      <div className="pb-16">
+        <img src="src/assets/Capture_d_écran_du_2024-02-28_14-41-39-removebg-preview.png" className="pl-4" alt="" />
+        <div className="flex flex-wrap leading-loose px-8 ">
+          <span className="pr-6">Terms of Use</span>
+          <span className="pr-6">Privacy Policy</span>
+          <span>© 2006-2024 Wix.com, Inc</span>
         </div>
       </div>
     </>
