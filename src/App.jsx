@@ -1,13 +1,25 @@
+import { useEffect, useState } from "react"
+import NavBar from "./Component/navBar";
+import Header from "./Component/Header";
 function App() {
+  const [menu, setMenu] = useState(false)
+  const handleClick = () => {
+    setMenu(!menu);
+  }
+  if (menu) {
+    return (
+      <NavBar>
+        <Header>
+          <button onClick={handleClick} ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" className="h-6 w-6 self-center " ><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+        </Header>
+      </NavBar>
+    )
+  }
   return (
     <>
-      <div className="fixed bg-white w-full">
-        <div className="h-14 flex justify-around items-stretch ">
-          <div className="text-3xl self-center">Wix</div>
-          <button className="self-center bg-[#166aea] rounded-full text-white text-sm font-normal leading-5 py-1.5 px-5">Get started</button>
-          <img src="src/assets/bars-solid.svg" alt="" className="h-6 w-6 self-center" />
-        </div>
-      </div>
+        <Header>
+          <button onClick={handleClick} ><img src="src/assets/bars-solid.svg" alt="open menu" className="h-6 w-6 self-center " /></button>
+        </Header>
       <div className="grid place-content-center">
         <div className="bg-gradient-to-r from-[#2F40AD] via-[#2A3BA9] to-[#354AB5] h-auto text-white">
           <h1 className="mt-32 mb-5 text-4xl text-center leading-snug">Create a website without limits</h1>
@@ -15,7 +27,7 @@ function App() {
           <input type="text" className="mx-8 w-80 rounded-full h-12 text-center " placeholder="Enter your Email adress" />
           <div className="mx-8 w-80 rounded-full h-12 bg-white mt-8 text-[#354AB5] flex justify-center items-stretch">
             <span className="self-center">Get started</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-3 self-center"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-3 self-center animate-pulse"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
           </div>
           <img src="src/assets/Capture_d_écran_du_2024-02-26_12-20-40-removebg-preview.png" alt="" />
         </div>
@@ -41,9 +53,28 @@ function App() {
           <h2 className=" text-4xl mt-12 "> Website templates that set you up for success</h2>
           <p className=" py-8 leading-7 text-base">Website templates that set you up for success Get a headstart on your journey with 900+ free, customizable website templates, strategically researched and tailored for every industry — or start from a blank canvas on our website builder.</p>
           <button className="self-center bg-white rounded-full text-black text-sm font-normal leading-5 py-1.5 px-5 w-36 h-12  left-5 mb-12">Get started</button>
-          <div className="flex pb-10">
+          <div className=" pb-10">
             <div >
-              <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" className="pb-6" alt="" />
+              <div className="snap-x">
+                <div className=" ">
+                  <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
+                </div>
+                <div className=" ">
+                  <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
+                </div>
+                <div className=" ">
+                  <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
+                </div>
+                <div className=" ">
+                  <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
+                </div>
+                <div className=" ">
+                  <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
+                </div>
+                <div className=" ">
+                  <img src="src/assets/0784b1_5a7b4554103544dfb0cd5545fa46b78b~mv2.webp" />
+                </div>
+              </div>
               <div className="flex items-stretch underline underline-offset-2">
                 <a href="">store </a>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-3 self-center fill-white"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
@@ -219,13 +250,12 @@ function App() {
             <p>Get help at any stage—from site creation to online growth.</p>
             <div className="flex items-stretch underline underline-offset-8 mb-12">
               <a href="">Browse All Services</a>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-3 self-center fill-black"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-3 self-center fill-black animate-bounce"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg>
             </div>
           </div>
           <button className="self-center bg-black rounded-full text-white text-sm font-normal leading-5 py-1.5 px-5 w-36 h-12 left-5 ">Get started</button>
         </div>
       </div>
-
     </>
   )
 }
