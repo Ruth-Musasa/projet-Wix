@@ -2,5 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-wix {
+    font-family: "Wix Madefor Display", sans-serif;
+  }
+
 
 

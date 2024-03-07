@@ -1,6 +1,6 @@
 export function FAQs(props) {
     return (
-        <div className="border-b border-black py-8 leading-7 border-gray-400 text-base px-8">
+        <div className="border-b border-black py-8 leading-7 border-gray-400 text-base px-8 md:text-xl">
             <div className="flex justify-between">
                 <div>
                     <h3><strong>{props.title} </strong></h3>

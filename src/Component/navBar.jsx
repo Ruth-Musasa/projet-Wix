@@ -1,6 +1,6 @@
 export default function NavBar(props) {
     return (
-        <div className="h-full w-full space-y-5 flex items-stretch ">
+        <div className="h-full w-full space-y-5 flex items-stretch md:hidden">
             {props.children}
             <div className="text-xl pr-6">
                 <select className="w-full bg-white p-6  mt-16">
