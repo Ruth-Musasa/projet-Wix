@@ -48,8 +48,8 @@ function App() {
               </div>
               <span className="invisible md:visible h-auto md:mt-96">Trusted by 250M+ users worldwide.</span>
             </div>
-            <img src="src/assets/Capture_d_écran_du_2024-02-26_12-20-40-removebg-preview.png" className="md:hidden  visible" alt="" />
-            <img src="src/assets/Capture_d_écran_du_2024-02-28_15-36-33-removebg-preview.png" alt="" className="invisible h-0 md:h-auto  md:self-center md:bg-cover md:bg-center md:visible  md:w-9/12 md:m-auto" />
+            <img src="src/assets/image003.png" className="md:hidden  visible" alt="" />
+            <img src="src/assets/image004.png" alt="" className="invisible h-0 md:h-auto  md:self-center md:bg-cover md:bg-center md:visible  md:w-9/12 md:m-auto" />
           </div>
         </div>
         <div className="mx-8 pb-6 md:w-7/12 md:m-auto md:my-24">
@@ -330,7 +330,7 @@ function App() {
           <button className="self-center bg-black rounded-full text-white text-sm font-normal leading-5 py-1.5 px-5 w-36 h-12  left-5 mb-12">Get started</button>
         </div>
         <div className="px-8 py-16 bg-white md:w-7/12 md:m-auto md:py-16">
-          <img src="src/assets/Capture_d_écran_du_2024-02-28_15-21-51-removebg-preview.png" alt="logo" />
+          <img src="src/assets/image005.png" alt="logo" />
           <p className="mb-12">The Wix website builder offers a complete solution from enterprise-grade infrastructure and business features to advanced SEO and marketing tools–enabling anyone to create and grow online.</p>
           <WixOption option='Product' />
           <WixOption option='Solutions' />
@@ -341,7 +341,7 @@ function App() {
       </div>
       <div className="md:border">
         <div className="pb-16 md:w-7/12 md:m-auto md:flex md:justify-between md:pb-2">
-          <img src="src/assets/Capture_d_écran_du_2024-02-28_14-41-39-removebg-preview.png" className="pl-4" alt="" />
+          <img src="src/assets/image006.png" className="pl-4" alt="" />
           <div className="flex flex-wrap leading-loose px-8 md:pt-6">
             <span className="pr-6">Terms of Use</span>
             <span className="pr-6">Privacy Policy</span>
